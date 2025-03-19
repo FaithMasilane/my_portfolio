@@ -1,93 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XALAMUKANI FAITH MASILANE - Portfolio</title>
-    <link rel="stylesheet" href="style.css/home.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="dark-mode-toggle">Dark Mode</button></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about" class="section">
-        <h1>XALAMUKANI FAITH MASILANE</h1>
-        <p>I am a recent graduate in Information Technology, specializing in Software Development from Rosebank College. With skills in Java, C#, PHP, CSS, HTML, Database, and Android development, I am passionate about mobile technology and user-friendly applications.</p>
-        <img src="pictures/p" alt="XALAMUKANI FAITH MASILANE" class="profile-img">
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAITH MASILANE - Portfolio</title>
+  <link rel="stylesheet" href="style.css/home.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo">FAITH MASILANE</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">FAITH MASILANE</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="/my portfolio/assets/Faith-1.jpeg" alt="Xalamukani Faith Masilane profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">XALAMUKANI FAITH MASLANE </h1>
+      <p class="section__text__p2">Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Xalamukani_Faith_Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="toggleMenu()">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+
+        <ul class="socials">
+          <div class="social-content">
+
+            <li><a href="https://www.linkedin.com/in/faith-masilane"><i class="fab fa-linkedin"></i>
+                LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/faith.masilane.7/"><i class="fab fa-facebook"></i>
+                Facebook</a></li>
+
+          </div>
+
+          <div class="social-content">
+
+            <li><a href="https://github.com/FaithMasilane"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://wa.me/0636126054"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+
+          </div>
+
+          <div class="social-content">
+            <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="/my portfolio/assets/Faith-2.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Rosebank College</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a recent graduate in Information Technology, specializing in Software Development from
+            Rosebank College. With skills in JAVA ,MYSQL ,SQL ,HTML ,CSS ,PHP ,C# ,KOTLIN AND PYTHON
+            I am passionate about mobile technology and user-friendly applications and
+            eager to leverage technical expertise
+            in Android and Web Development for innovative
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
 
     <section id="skills" class="section">
-        <h2>Skills</h2>
+      <h2>Skills</h2>
+
+      <div class="skills-content">
         <div class="skill">
-            <p>HTML</p>
-            <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+          <i class="fab fa-css3-alt skill-logo"></i>
+          <p>CSS</p>
         </div>
+
         <div class="skill">
-            <p>CSS</p>
-            <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+          <i class="fab fa-html5 skill-logo"></i>
+          <p>HTML</p>
         </div>
+      </div>
+
+      <div class="skills-content">
+
         <div class="skill">
-            <p>JavaScript</p>
-            <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+          <i class="fab fa-java skill-logo"></i>
+          <p>Java</p>
         </div>
-    </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li>Android Application for Student Management</li>
-            <li>Responsive E-commerce Website</li>
-            <li>Database-driven Web Application</li>
-        </ul>
-    </section>
-
-    <section id="testimonials" class="section">
-        <h2>Testimonials</h2>
-        <p>"Faith is a highly skilled developer with a keen eye for detail and problem-solving." - Colleague</p>
-        <p>"Her expertise in software development is outstanding, and she is always ready to learn new technologies." - Mentor</p>
-    </section>
-
-    <section id="portfolio" class="section">
-        <h2>My Work</h2>
-        <div class="gallery">
-            <img src="IMG_4139.jpeg" alt="Project 1">
-            <img src="IMG_4140.jpeg" alt="Project 2">
-            <img src="IMG_4124.jpeg" alt="Project 3">
+        <div class="skill">
+          <i class="fas fa-database skill-logo"></i>
+          <p>SQL</p>
         </div>
+
+      </div>
+
+      <div class="skills-content">
+
+        <div class="skill">
+          <i class="fas fa-database skill-logo"></i>
+          <p>MYSQL</p>
+        </div>
+
+        <div class="skill">
+          <i class="fab fa-php skill-logo"></i>
+          <p>PHP</p>
+        </div>
+
+      </div>
+
+
+      <div class="skills-content">
+
+        <div class="skill">
+          <i class="fab fa-cuttlefish skill-logo"></i>
+          <p>C#</p>
+        </div>
+
+        <div class="skill">
+          <i class="fab fa-java skill-logo"></i>
+          <p>KOTLIN</p>
+        </div>
+
+      </div>
+
+      <div class="skills-content">
+
+        <div class="skill">
+          <i class="fab fa-python skill-logo"></i>
+          <p>PYTHON</p>
+        </div>
+
+      </div>
+
+
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form>
+  </section>
+
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="about" class="section">
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Android Application for Bird Watching</h2>
+            <ul>
+              <li>
+                <i class="fas fa-bird project-logo"></i>
+                <p>A mobile app designed to help users identify and track bird species in their local environment.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Salon Website</h2>
+            <ul>
+              <li>
+                <i class="fas fa-cut project-logo"></i>
+                <p>A responsive website for a local salon, featuring online booking and service descriptions.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <section id="contact" class="section">
+          <h2>Contact Me</h2>
+          <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
-        </form>
-        <p>Find me on:</p>
-        <ul class="socials">
-            <li><a href="https://www.linkedin.com/in/faith-masilane">LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/faith-masilane">Facebook</a></li>
-            <li><a href="https://github.com/FaithMasilane">GitHub</a></li>
-        </ul>
+          </form>
+
+          <div class="follow">
+
+            <p>Follow me on:</p>
+
+          </div>
+
+          <ul class="socials">
+            <div class="social-content">
+
+              <li><a href="https://www.linkedin.com/in/faith-masilane"><i class="fab fa-linkedin"></i>
+                  LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/faith.masilane.7/"><i class="fab fa-facebook"></i>
+                  Facebook</a></li>
+
+            </div>
+
+            <div class="social-content">
+
+              <li><a href="https://github.com/FaithMasilane"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://wa.me/0636126054"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+
+            </div>
+
+            <div class="social-content">
+              <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+
+            </div>
+
+          </ul>
+
+
+        </section>
+      </div>
+
+
     </section>
 
+
     <footer>
-        <button onclick="downloadResume()">Download Resume</button>
-        <p>&copy; 2025 XALAMUKANI FAITH MASILANE. All Rights Reserved.</p>
+      <!-- Download Resume Button -->
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="downloadResume()">Download Resume</button>
+
+      </div>
+      <p>&copy; XALAMUKANI FAITH MASILANE.</p>
     </footer>
+
+    <script>
+      // Dark Mode Toggle
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+      darkModeToggle.addEventListener("click", () => {
+        // Toggle dark mode on body
+        document.body.classList.toggle("dark-mode");
+
+        // Optionally save the preference in localStorage to persist the mode across page refreshes
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "enabled");
+        } else {
+          localStorage.setItem("darkMode", "disabled");
+        }
+      });
+
+      // Check if dark mode is saved in localStorage and enable it
+      window.onload = () => {
+        if (localStorage.getItem("darkMode") === "enabled") {
+          document.body.classList.add("dark-mode");
+        }
+      };
+
+      // Resume download functionality
+      function downloadResume() {
+        const resumeLink = document.createElement("a");
+        resumeLink.href = "/assets/Xalamukani_Faith_Resume.pdf";
+        resumeLink.download = "/assets/Xalamukani_Faith_Resume.pdf";
+        resumeLink.click();
+      }
+
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+    </script>
+
 </body>
+
 </html>
